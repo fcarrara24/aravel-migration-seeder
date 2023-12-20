@@ -38,6 +38,10 @@ npm install --save @fortawesome/fontawesome-free
 
 #copio la cartella dei webfont e se voglio la rinomino
 
+#installo dbal per migration e seeder
+composer require doctrine/dbal
+
+
 #comandi git
 
 git init
@@ -47,5 +51,33 @@ git branch -M main
 git remote add origin your_git_url 
 git push -u origin main
 
+
+```
+## Clono progetto da github 
+
+```bash
+# copio file .env.example e lo rinomino in .env
+
+composer install
+
+php artisan key:generate
+
+npm install
+
+# inserisco i dati per il collegamento al db in env
+
+# creo il database da phpmyadmin
+
+
+# preparo le rotte file web.php es. 
+Route::get('/books', [BookController::class, 'index'])->name('books.index');
+
+# creo controller
+php artisan make:controller NomeController
+
+#creo model
+php artisan make:model Nome
+
+# creo le views relative
 
 ```
