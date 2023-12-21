@@ -5,10 +5,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel base @yield('title','template')</title>
+    <title>@yield('title','template')</title>
 
     <!-- Fonts -->
     <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Include Faker using jsDelivr CDN to get hodiern date-->
+    <script src="https://cdn.jsdelivr.net/npm/faker@5.5.3/dist/faker.min.js"></script>
 
     <!-- Styles -->
     @vite('resources/js/app.js')
@@ -20,7 +23,6 @@
 
     @yield('content')
 
-@include('partials.footer')
 
 </body>
 

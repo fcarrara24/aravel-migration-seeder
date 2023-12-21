@@ -11,4 +11,10 @@ $fa-font-path: "../webfonts" !default;
 
 h1 {
     color: $text-color;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }

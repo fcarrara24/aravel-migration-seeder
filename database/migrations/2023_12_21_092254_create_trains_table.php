@@ -23,7 +23,7 @@ return new class extends Migration {
             $table->unsignedtinyInteger('Numero_carrozze');
             $table->unsignedtinyInteger('In_orario');
             $table->unsignedtinyInteger('Cancellato');
-
+            $table->string('Giorno_partenza', 12);
             $table->timestamps();
         });
     }

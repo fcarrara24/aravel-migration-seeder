@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
-@section('title', 'All Trains')
+@section('title', 'Houses')
 
 @section('content')
     <main>
 
-        <h1 >Trains</h1>
+        <h1>Trains</h1>
         <div class="container">
             <div class="row">
                 @forelse ($trains as $train)

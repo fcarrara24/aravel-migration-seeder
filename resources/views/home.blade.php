@@ -1,10 +1,10 @@
 @extends('layouts.app')
 
-@section('title', 'Home')
+@section('title', 'Homepage')
 
 @section('content')
 <main>
-    <h1>Home page</h1>
+    <h1 class=" text-center ">seleziona la pagina</h1>
 </main>
 
 @endsection

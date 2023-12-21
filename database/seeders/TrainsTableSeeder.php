@@ -29,6 +29,7 @@ class TrainsTableSeeder extends Seeder
             $newTrain->Numero_carrozze = $faker->randomNumber(2, false);
             $newTrain->In_orario = $faker->randomElement([true, false]);
             $newTrain->Cancellato = $faker->randomElement([true, false]);
+            $newTrain->Giorno_partenza = $faker->dayOfWeek();
 
             $newTrain->save();
         }
