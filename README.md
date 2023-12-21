@@ -64,9 +64,9 @@ php artisan key:generate
 
 npm install
 
-# inserisco i dati per il collegamento al db in env
-
 # creo il database da phpmyadmin
+
+# inserisco i dati per il collegamento al db in env
 
 
 # preparo le rotte file web.php es. 
