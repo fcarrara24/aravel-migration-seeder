@@ -19,4 +19,10 @@ class TrainController extends Controller
         $trains = Train::where('Giorno_partenza', '=', $giorno_odierno)->get();
         return view('trains.today', compact('trains'));
     }
+    public function details($id)
+    {
+        $train = Train::where('id', '=', $id)->get();
+
+        return view('trains.details', compact('train'));
+    }
 }
